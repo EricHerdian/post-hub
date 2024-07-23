@@ -23,9 +23,6 @@ router.get("/getBlogs", authMiddleware, async (req, res) => {
   res.json(listOfBlogs);
 });
 
-// Get All Blogs based on UserId
-// TODO: ADD FUNCTION
-
 // Get a Blog based on Id
 router.get("/getBlog", authMiddleware, async (req, res) => {
   const blogId = req.query.id;
